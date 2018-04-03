@@ -1,0 +1,185 @@
+/*
+A lot of the css is from a few of your examples of responsive website creation.
+Edited to suit the app.
+*/
+@charset "utf-8";
+body {
+	font: 0.875em/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: lightblue;
+	margin: 0;
+	padding: 0;
+	color: #000;
+        text-align: center;
+}
+header {
+    background-color: greenyellow;
+}
+header, section, footer, aside, article, figure {
+	display: block;
+        text-align: center;
+}
+table {
+    margin: auto;
+    width: 60%;
+   
+}
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Freckle Face', cursive;
+}
+header h1, header h2, header h3, header h4, header h5, header h6, header p {
+	padding-right: 1.5625%;
+	padding-left: 1.5625%;
+}
+article h1, article h2, article h3, article h4, article h5, article h6, article p {
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+}
+nav h1, nav  h2, nav  h3, nav  h4, nav  h5, nav  h6, nav  p, aside h1, aside  h2, aside  h3, aside  h4, aside  h5, aside  h6, aside  p {
+	padding-right: 8.33333%;
+	padding-left: 8.33333%;
+}
+img {
+        max-width: 100%;
+        height: auto; 
+}
+a img { 
+	border: none;
+}
+a:link, a:visited {
+	color: red;
+	text-decoration: underline; 
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+#wrapper {
+        width: 100%;
+        max-width: 960px;
+        min-width: 350px;
+	margin: 0 auto; 
+	background-color: #3B8686;
+}
+header {
+	background-color: #A8DBA8;
+	overflow: hidden;
+}
+header h1 {
+	margin: 0;
+	font-size: 4.42857em;
+}
+header img {
+	float: left;
+	margin-right: 1.04167%;
+}
+nav {
+	clear: left;
+	float: left;
+	width: 18.75%;
+}
+nav ul {
+	list-style: none; 
+}
+li{
+    padding-right: 100px;
+    
+}
+nav ul li {
+	background-color: #CFF09E;
+	margin-bottom: 4px;
+	font-size: 1.14286em;
+}
+nav ul a:link, nav ul a:visited { 
+	padding: 5px 2.77778% 5px 8.33333%;
+	display: block; 
+	width: 100%;  
+	text-decoration: none;
+	color: #0B486B;
+}
+nav ul a:hover, nav ul a:active, nav ul a:focus { 
+	background-color: #0B486B;
+	color: #FFF;
+}
+article {
+	padding: 0;
+	width: 62.5%;
+	float: left;
+	background-color: #FFFFFF;
+}
+article h1 {
+	font-size: 2.57143em;
+}
+article h2 {
+	font-size: 1.71429em;
+	margin-bottom: 0;
+	color: #d60201;
+}
+aside {
+	float: left;
+	width: 18.75%;
+	background-color: #3B8686;
+	color: #fff;
+	
+}
+aside h1 {
+	font-size: 1.71429em;
+        
+}
+footer {
+	padding: 10px 0;
+	background-color: #A8DBA8;
+	clear: both; 
+        text-align: center;
+}
+
+
+@media only screen and (min-width:911px) and (max-width: 974px)  {
+
+    header h1 {
+        font-size: 4em; 
+    }
+    nav ul li, nav ul li a {
+	display: block;
+	float: left;
+	width: 25%
+    }
+    nav {
+	width: 100%;
+        clear: both;
+    }
+    article {
+	width: 76.92308%;
+    }
+    aside {
+	width: 23.07692%;
+    }
+
+}
+@media only screen and (min-width:641px) and (max-width: 910px)  {
+
+    header h1 {
+        font-size: 2.5em; 
+    }
+    nav ul li, nav ul li a {
+	display: block;
+	float: left;
+	width: 25%
+    }
+    nav {
+	width: 100%;
+        clear: both;
+    }
+    article {
+	width: 65%;
+    }
+    aside {
+	width: 35%;
+    }
+}
+    
